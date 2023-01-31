@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WeatherView</h1>
+      <form>
+        <input type="text" id="search-input">
+        <button type="submit" id="input-button">Search</button>
+      </form>
+    </header>
+    
+    <section class="weatherColumns">
+      <section id="userHistory"></section>
+
+      <section class="currentWeatherView">
+        <h1 class="currentCity"></h1>
+
+        <section class="forecastView">
+          <h1>5 Day Forecast</h1>
+          <div class="forecastcard card1">
+
+          </div>
+          <div class="forecastcard card2"></div>
+          <div class="forecastcard card3"></div>
+          <div class="forecastcard card4"></div>
+          <div class="forecastcard card5"></div>
+        </section>
+      </section>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

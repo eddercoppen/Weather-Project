@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+header > h1 {
+    margin-bottom: .5rem;
+}
+
+
+
+form > * {
+    background-color: white;
+    border: 1px solid black;
+}
+
+form > input:focus {
+    outline: none;
+    border: 3px solid black;
+}
+
+.weatherColumns {
+    display: grid;
+    grid-template-columns: 200px repeat(5, 1fr);
+
+}
+
+#userHistory {
+   grid-column: 1;
+
+}
+
+.currentWeatherView {
+   grid-column: 2/5;
+
+
+}
+
+.forecastView {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+}
+
+.forecastcard {
+    border: 2px solid black;
+    width: 200px;
+    min-height: 2em;
+    padding: 2px;
+    
+    
+}
+
+.card1 {
+    grid-column: 1;
+}
+.card2 {
+    grid-column: 2;
+}
+.card3 {
+    grid-column: 3;
+}
+.card4 {
+    grid-column: 4;
+}
+.card5 {
+    grid-column: 5;
+}
+
+#userHistory:hover {
+    color: grey;
+    cursor: pointer;
+}
